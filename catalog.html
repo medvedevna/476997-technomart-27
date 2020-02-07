@@ -14,11 +14,11 @@
       </div>
       <ul>
         <li>
-          <span>Закладки:</span>
+          <a href="">Закладки:</a>
           <span>0</span>
         </li>
         <li>
-          <span>Корзина:</span>
+          <a href="">Корзина:</a>
           <span>0</span>
         </li>
         </ul>
@@ -61,9 +61,56 @@
       </ul>
       <h1>Перфораторы</h1>
       <section>
-        <h2>Фильтры товаров</h2>
-        <!-- Здесь будет форма -->
+        <h2>Фильтр</h2>
+        <form>
+          <fieldset>
+            <legend>Производители</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                <label for="filter-bosch">Sosch</label>
+              </li>
+              <li>
+                <input type="checkbox" name="interscol" id="filter-interscol">
+                <label for="filter-interscol">Интерскол</label>
+              </li>
+              <li>
+                <input type="checkbox" name="makita" id="filter-makita" checked>
+                <label for="filter-makita">Makita</label> Bosch
+              </li>
+              <li>
+                <input type="checkbox" name="dewalt" id="filter-dewalt">
+                <label for="filter-dewalt">Dewalt</label>
+              </li>
+              <li>
+                <input type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание</legend>
+            <ul>
+              <li>
+                <input type="radio" name="power" value="mains-power" id="filter-mains" checked>
+                <label for="filter-mains">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" name="power" value="battery-power" id="filter-battery">
+                <label  for="filter-battery">Сeтевые</label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
         <button type="button">Показать</button>
+      </section>
+      <section>
+        <h2>Сортировка</h2>
+        <ul>
+          <li a href="">По цене</li>
+          <li a href="">По типу</li>
+          <li a href="">По функционалу</li>
+        </ul>
       </section>
       <section>
         <h2>Список товаров</h2>
@@ -175,6 +222,11 @@
         </p>
       </article>
     </main>
+    <!--Поп-ап-->
+    <p>Товар добавлен в корзину!</p>
+    <a href="">Оформить заказ</a>
+    <button type="button">Продолжить покупки</button>
+    <!--Поп-ап-->
     <footer>
       <a>
         <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
